@@ -7,5 +7,4 @@ var sentence = "<h2> There once was a " + adjective;
 alert("All done. Ready for the message?");
 sentence += " programmer who wanted to use JavaScript to " + verb;
 sentence += " a " + noun + "</h2>";
-document.write(verb);
 document.writeln(sentence);
