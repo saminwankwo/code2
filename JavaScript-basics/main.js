@@ -30,3 +30,4 @@ var story = prompt("please type a verb");
 story += "he is a fine boy"
 var story = prompt("please type a noun");
 document.write(story);
+
