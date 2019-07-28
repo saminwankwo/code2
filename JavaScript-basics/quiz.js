@@ -46,3 +46,51 @@ if ( correctGuess ) {
 
 
 
+/*A simpe quiz application
+asks 5 questions
+keeps track of the number of questions the user answers correctly
+tell the user the number of right questions they answered correctly
+rank the user(5 questions correctly-gold crown, 3-4 silver crown, 1-2 bronze crown)*/
+
+//quiz begins, no answer is correct
+var correct = 0;
+
+//ask the questions
+var answer1 = prompt("Name the programing language that's also a gem?");
+if (answer1.toUpperCase() === 'RUBY') {
+    correct += 1;
+}
+
+var answer2 = prompt("Name the programing language that's also a snake?");
+if (answer2.toUpperCase() === 'PYTHON') {
+    correct += 1;
+}
+
+var answer3 = prompt("What is the programing language that you use to style web pages?");
+if (answer3.toUpperCase() === 'CSS') {
+    correct += 1;
+}
+
+var answer4 = prompt('What language do you use in building the structure of a webpage?');
+if (answer4.toUpperCase()=== 'HTML') {
+    correct += 1;
+}
+
+var answer5 = prompt('what language do you use to make a websit interactive?');
+if (answer5.toUpperCase() === 'JAVASCRIPT') {
+    correct += 1;
+}
+
+//output the result
+document.write('You got ' + correct + ' out of 5 questions correctly');
+
+//rank and display base on user's grae
+if (correct === 5) {
+    document.write('<p><strong> You have earned a gold crown</strong></p>');
+} else if (correct >= 3) {
+    document.write('<p><strong>You have earned a sliver medal</strong></p>');
+} else if (correct >= 1) {
+    document.write('<p><strong> You have earned a bronze medal</strong></p>');
+} else {
+    document.write('<p><strong> Sorry, no medal</strong></p>');
+}
