@@ -16,13 +16,26 @@ if (parseInt(guess) === randomNumber) {
     document.write("sorry, the Number was " + randomNumber + '</p>');
 }
 
+/*The random number guessing game 
+A random guessing game, that gives a user two attempt */
 
-// adding booleen value to our game
+/* adding booleen value to our game*/
+//assume the user didn't quess correctly
 var correctGuess = false; 
 var randomNumber = Math.floor(Math.random() * 6) + 1;
 var guess = prompt("I am thinking of a number between 1 and 6. what is it?");
 if (parseInt(guess) === randomNumber) {
     correctGuess = true;
+} else if (parseInt(guess) < randomNumber) {
+    var guessMore = prompt('Please try again. the number I am thinking of is more than ' + guess);
+    if (parseInt(guessMore) === randomNumber) {
+        correctGuess = true;
+    }
+} else if (parseInt(guess) > randomNumber) {
+    var guessLess = prompt('Please try again. the number I am thinking is less than ' + guess);
+    if (parseInt(guessLess) === randomNumber) {
+        correctGuess = true;
+    }
 }
  
 if ( correctGuess ) {
@@ -30,3 +43,6 @@ if ( correctGuess ) {
 } else {
     document.write("sorry, the Number was " + randomNumber + '</p>');
 }
+
+
+
