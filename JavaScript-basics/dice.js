@@ -19,6 +19,9 @@ document.write(getArea(6, 5, 'cm'));
 
 /* Generating random numbers between two numbers, lower and higher*/
 function getRandom(upperNumber, lowerNumber) {
+    if (isNaN(lowerNumber) || isNaN(upperNumber)) {
+        throw new Error('Please enter a new number');
+    }
     var randomNumber = Math.floor(Math.random() * (upperNumber - lowerNumber + 1)) + lowerNumber;
     return randomNumber;
 }
