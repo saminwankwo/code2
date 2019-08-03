@@ -13,7 +13,7 @@ function randomNumber(upper) {
 // }
 
 //learning about do-while loop
-var randomNumber = getRandomNumber(10);
+/*var randomNumber = getRandomNumber(10);
 var guess;
 var guessCount = 0;
 var correctGuess = false;
@@ -34,8 +34,12 @@ do {
 } while (!correctGuess)
 document.write('<h1> You guessed the number </h1>');
 document.write('It took you ' + guessCount + ' tries to guess the right ' + randomNumber)
+*/
 
 // using for loop to add ten div to page
 var html = '';
 
-for
+for (var i = 1; i <= 10; i += 1){
+    html += '<div>' + i + '</div>'
+}
+document.write(html);
