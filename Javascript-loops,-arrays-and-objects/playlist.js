@@ -1,11 +1,4 @@
-function printList(list) {
-    var listHTML = '<ol>';
-    
-    for (var i = 0; i < list.length; i = + 1) {
-        listHTML += '<li>' + list[i] + ' </li>'
-    }
-    listHTML += '</ol>';
-    print(listHTML);
-}
+var playList = [];
+playList.push('I did it my way');
 
-function print(html)
+printList(playList)
