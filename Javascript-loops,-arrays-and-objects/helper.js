@@ -8,5 +8,6 @@ function printList(list) {
     print(listHTML);
 }
 
-function print(html);
-
+function print(html) {
+    document.write(html)
+}
