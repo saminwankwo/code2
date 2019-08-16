@@ -15,4 +15,9 @@ home[home.length] = 'holes';
 home.push('phone ', 'home'); // adding item to the end of an array
 home.unshift('6', 'ghkk', 'ggfgf'); //adding items to the beginning of an array;
 document.writeln(home);
-// document.write(home.length);
+// document.write(home.length)
+
+
+// removing an element from an array
+home.pop();
+document.write(home);
