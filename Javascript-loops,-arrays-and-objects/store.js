@@ -1,5 +1,5 @@
 var inStock = ['apples', 'eggs', 'rice', 'Beans', 'millk', 'loaf bread', 'peanuts', 'goats',
-    'tin', 'pizza', 'ice cream'];
+    'tin', 'pizza', 'ice cream', 'cassvita', 'salad'];
 
 var search;
 
@@ -8,7 +8,8 @@ function print(message) {
 }
 
 while (true) {
-    search = prompt("search for a product in our store. type 'list' to show all the product in our store and quit to exit")
+    search = prompt("search for a product in our store. type 'list' to show all the product in our store and quit to exit");
+    search = search.toLowerCase();
 
     if (search === 'quit') {
         break;
@@ -16,9 +17,9 @@ while (true) {
         print(inStock.join(', '));
     } else {
         if (inStock.indexOf(search) > -1) {
-            print('');
+            print('Yes, we have ' + search + ' in the store');
         } else {
-            print('');
+            print(search + ' is not in stock');
         } 
     }
 }
