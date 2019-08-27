@@ -5,7 +5,8 @@ var playList = [
     'generation',
     'importer',
     'okay na',
-    'fertile'
+    'fertile',
+    'cell fellowship'
 ];
 
 function print(message) {
@@ -22,3 +23,18 @@ function printList( list ) {
 }
 
 printList(playList);
+
+//how to use the join method
+
+var daysInWeek = ['monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'saturday', 'sunday'];
+var dayString = daysInWeek.join(', ');
+document.writeln(dayString);
+
+//using concate method to join two arrays
+var currentStudents = ['John', 'flavour', 'Ngozi'];
+var newStudents = ['lucky', 'christian', 'lovely'];
+var allStudents = currentStudents.concat( newStudents );
+document.write(allStudents)
+
+
+//using the index of method
